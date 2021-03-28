@@ -7,6 +7,13 @@
 :root{
     --primary-color:#424874;
     --secondary-color:#a6b1e1;
+    --txt-primary:#dcd6f7;
+    --txt-secondary:#d1d4e4;
+    --txt-dark:#424874;
+    --txt-light:#a6b1e1;
+    --padding-sm:0.5rem;
+    --padding-md:1rem;
+    --padding-lg:1.5rem;
 }
 body{
     width: 100vw;
@@ -21,12 +28,10 @@ a{
     color: inherit;
 }
 .header{
-    width: 100%;
+    width: 100vw;
     padding: 1rem 1rem;
-    position:fixed;
     top:0;
     z-index: 1;
-    /* box-shadow: 0 0.5px 20px var(--primary-color); */
 }
 .brand-link{
     color:var(--primary-color);
@@ -60,4 +65,32 @@ main > .brand-logo{
 .btn{
     padding-top: 0.8rem !important;
     padding-bottom: 0.8rem !important;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+}
+.side-bar{
+    display: flex;
+    width: 100vw;
+    height: max-content;
+    overflow:auto;
+    white-space: nowrap;
+    /* background: #a6b1e1; */
+    padding: var(--padding-md);
+}
+ul{
+    display: flex;
+    margin-left: 1rem;
+}
+.component-item{
+    color: var(--txt-dark);
+    padding:var(--padding-sm);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    list-style: none;
+}
+.component-item:hover{
+    background: var(--secondary-color);
+    color: var(--txt-primary);
 }
