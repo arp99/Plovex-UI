@@ -22,6 +22,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* overflow-x: hidden; */
+    /* overflow-y: hidden; */
 }
 a{
     text-decoration: none;
@@ -30,8 +32,11 @@ a{
 .header{
     width: 100vw;
     padding: 1rem 1rem;
+    position: sticky;
     top:0;
     z-index: 1;
+    background: #f7f7f7;
+    box-shadow: 0 3px 10px var(--txt-secondary);
 }
 .brand-link{
     color:var(--primary-color);
@@ -67,22 +72,29 @@ main > .brand-logo{
     padding-bottom: 0.8rem !important;
 }
 .main{
+    width: 100vw;
     display: flex;
-    flex-direction: column;
+}
+.side-bar-navigation{
+    position: fixed;
+    min-width: max-content;
+    /* width: 15%; */
+    height: 100vh;
+    top: 6rem;
 }
 .side-bar{
     display: flex;
-    width: 100vw;
+    flex-direction: column;
+    background: #f7f7f7;
     height: max-content;
-    overflow:auto;
-    white-space: nowrap;
-    /* background: #a6b1e1; */
     padding: var(--padding-md);
+    z-index: 1;
 }
 ul{
     display: flex;
-    margin-left: 1rem;
+    flex-direction: column;
 }
+
 .component-item{
     color: var(--txt-dark);
     padding:var(--padding-sm);
@@ -90,7 +102,30 @@ ul{
     cursor: pointer;
     list-style: none;
 }
+
 .component-item:hover{
     background: var(--secondary-color);
     color: var(--txt-primary);
+}
+@media only screen and (max-width: 600px) {
+    .header{
+        box-shadow: none;
+    }
+    .side-bar-navigation{
+        height: max-content;
+        top: 5rem;
+        /* position: relative; */
+    }
+    .side-bar{
+        flex-direction: row;
+        width: 100vw;
+        z-index: 1;
+        height: max-content;
+        overflow:auto;
+        white-space: nowrap;
+    }
+    ul{
+        flex-direction: row;
+        margin-left: 1rem;
+    }
 }
