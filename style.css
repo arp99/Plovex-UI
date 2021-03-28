@@ -107,6 +107,36 @@ ul{
     background: var(--secondary-color);
     color: var(--txt-primary);
 }
+.docs__container{
+    width: 100vw;
+    padding-left: 20%;
+    padding-top: 2.5rem;
+}
+.docs-para{
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+.code{
+    background: var(--txt-light);
+    color: var(--txt-dark);
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+    display: inline;
+}
+.code-snippet__container{
+    width: 85%;
+    overflow-x: auto;
+}
+.code-snippet__container > code{
+    border-radius: 0.5rem;
+}
+.code-snippet{
+    width: 90%; 
+    height:max-content; 
+    border:0; 
+    /* transform: scale(1);  */
+    /* overflow:hidden; */
+}
 @media only screen and (max-width: 600px) {
     .header{
         box-shadow: none;
@@ -127,5 +157,9 @@ ul{
     ul{
         flex-direction: row;
         margin-left: 1rem;
+    }
+    .docs__container{
+        margin: 0;
+        padding: var(--padding-sm) var(--padding-md);
     }
 }
