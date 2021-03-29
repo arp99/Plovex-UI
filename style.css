@@ -172,6 +172,14 @@ ul{
     grid-template-columns: repeat(3 , 1fr);
     grid-gap: 0.5rem;
 }
+.component-preview__container-card{
+    display: flex;
+    width:80%;
+    justify-content: space-evenly;
+    padding: var(--padding-sm);
+    border-radius:0.5rem;
+    box-shadow: 0 4px 5px -2px var(--secondary-color);
+}
 @media only screen and (max-width:950px){
     .code-snippet{
         height:17rem;
