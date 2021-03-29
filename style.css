@@ -120,11 +120,14 @@ ul{
     color: var(--txt-dark);
     padding:var(--padding-sm);
     border-radius: 0.5rem;
+    width: max-content;
     cursor: pointer;
     list-style: none;
+    transition: 0.2s;
 }
 
 .component-item:hover{
+    transform: scale(1.1);
     background: var(--secondary-color);
     color: var(--txt-primary);
 }
