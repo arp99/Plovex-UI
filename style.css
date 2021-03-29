@@ -34,6 +34,14 @@ p{
 h1{
     margin:1rem 0;
 }
+.header-index{
+    width: 100vw;
+    padding: 1rem 1rem;
+    position: sticky;
+    top:0;
+    z-index: 2;
+    background: #f7f7f7;
+}
 .header{
     width: 100vw;
     padding: 1rem 1rem;
