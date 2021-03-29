@@ -125,7 +125,7 @@ ul{
     padding-left: 20%;
     min-height: 100vh;
 }
-#usage,#avatar{
+#usage,#avatar,#alert,#button,#card,#image,#navbar,#toast,#typography{
     padding-top: 1rem;
 }
 .docs-para{
@@ -159,6 +159,7 @@ ul{
     border-radius:0.5rem;
     box-shadow: 0 4px 5px -2px var(--secondary-color);
     grid-template-columns: repeat(3 , 1fr);
+    grid-gap: 0.5rem;
 }
 @media only screen and (max-width:950px){
     .code-snippet{
