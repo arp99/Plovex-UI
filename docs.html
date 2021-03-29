@@ -20,9 +20,18 @@
     <section class="main">
         <div class="side-bar-navigation">
             <div class="side-bar">
+                <div id="brand">
+                    <a href="/index.html" class="brand-link">
+                        <div class="brand-name">
+                            <img src="/assets/UI-logo.png" alt="Plovex-logo" class="brand-logo">
+                            <span class="brand-title">PLOVEX UI</span>
+                        </div>
+                    </a>
+                </div>
+                <h1><a href="#usage" class="heading-md">Usage</a></h1>
                 <h1>Components</h1>
                 <ul class="component-list__container">
-                    <li class="component-item">Avatar</li>
+                    <a href="#avatar"><li class="component-item">Avatar</li></a>
                     <li class="component-item">Alert</li>
                     <li class="component-item">Button</li>
                     <li class="component-item">Card</li>
@@ -33,17 +42,107 @@
                 </ul>
             </div>
         </div class="side-bar-navigation">
-        <div class="docs__container">
-            <h1 class="heading-md txt-dark">CSS</h1>
-            <p class="docs-para">Copy-paste the stylesheet <span class="code">&lt;link&gt;</span> into your <span class="code">&lt;head&gt;</span> before all other stylesheets to load our CSS.</p>
-            <div class="code-snippet__container">
-                <iframe
-                    src="https://carbon.now.sh/embed/qV5vcyVxphlCJYCWozbE"
-                    class="code-snippet"
-                    sandbox="allow-scripts allow-same-origin">
-                </iframe>
+        <!-- <div class="docs"> -->
+            <div class="docs__container">
+                <div id="usage">
+                    <h1 class="heading-md txt-dark">CSS</h1>
+                    <p class="docs-para">Copy-paste the stylesheet <span class="code">&lt;link&gt;</span> into your <span class="code">&lt;head&gt;</span> before all other stylesheets to load our CSS.</p>
+                    <div class="code-snippet__container">
+                        <iframe
+                            src="https://carbon.now.sh/embed/qV5vcyVxphlCJYCWozbE"
+                            class="code-snippet"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
             </div>
-        </div>
+            <div class="docs__container">
+                <div id="avatar">
+                    <h1 class="heading-md txt-dark">Avatar</h1>
+                    <p class="docs-para">
+                        Avatars are ofte used to show profile pictures. Use the correct class to easily create customizable avatars
+                    </p>
+                    <h1 class="heading-sm txt-light">Standard Avatars</h1>
+                    <div class="component-preview__container">
+                        <div class="avatar__container avatar-xs">
+                            <!-- avatar - xs -->
+                            <img src="assets/avatar.png" alt="avatar" class="avatar-img">
+                        </div>
+                        <div class="avatar__container avatar-sm">
+                            <!-- avatar - sm -->
+                            <img src="assets/avatar.png" alt="avatar" class="avatar-img">
+                        </div>
+                        <div class="avatar__container avatar-md">
+                            <!-- avatar - md -->
+                            <img src="assets/avatar.png" alt="avatar" class="avatar-img">
+                        </div>
+                    </div>
+                    <p class="docs-para">
+                        The avatar component has 5 different sizes: <span class="code">avatar-xs</span>(3rem), <span class="code">avatar-sm</span>(4rem), <span class="code">avatar-md</span>(6rem), <span class="code">avatar-lg</span>(8rem), <span class="code">avatar-xlg</span>(10rem).
+                    </p>
+                    <div class="code-snippet__container">
+                        <iframe
+                            src="https://carbon.now.sh/embed/slbHMIBp6TsWjD7cDmb8"
+                            class="code-snippet"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+                <h1 class="heading-sm txt-light">Avatar with badge</h1>
+                <div class="component-preview__container">
+                    <div class="avatar__container avatar-xs">
+                        <img src="assets/avatar.png" alt="avatar" class="avatar-img">
+                        <span class="avatar-badge"></span>
+                    </div>
+                    <div class="avatar__container avatar-sm">
+                        <img src="assets/avatar.png" alt="avatar" class="avatar-img">
+                        <span class="avatar-badge"></span>
+                    </div>
+                    <div class="avatar__container avatar-md">
+                        <img src="assets/avatar.png" alt="avatar" class="avatar-img">
+                        <span class="avatar-badge"></span>
+                    </div>
+                </div>
+                <p class="docs-para">
+                    Just add a span with class <span class="code">avatar-badge</span> below the avatar image, to get a beautiful badge
+                </p>
+                <div class="code-snippet__container">
+                    <iframe
+                        src="https://carbon.now.sh/embed/5UomQPCq74xJ2qXAIeV8"
+                        class="code-snippet"
+                        sandbox="allow-scripts allow-same-origin">
+                  </iframe>
+                </div>
+                <h1 class="heading-sm txt-light">Avatar with different Badges</h1>
+                <div class="component-preview__container">
+                    <div class="avatar__container avatar-md">
+                        <img src="assets/avatar.png" alt="avatar" class="avatar-img">
+                        <!-- Online badge  -->
+                        <span class="avatar-badge online"></span>
+                    </div>
+                    <div class="avatar__container avatar-md">
+                        <img src="assets/avatar.png" alt="avatar" class="avatar-img">
+                        <!-- Online badge  -->
+                        <span class="avatar-badge offline"></span>
+                    </div>
+                    <div class="avatar__container avatar-md">
+                        <img src="assets/avatar.png" alt="avatar" class="avatar-img">
+                        <!-- Online badge  -->
+                        <span class="avatar-badge dnd"></span>
+                    </div>
+                </div>
+                <p class="docs-para">
+                    Add different classes to change color of badges: <span class="code">online</span>(green) , <span class="code">offline</span>(grey) , <span class="code">dnd</span>(yellow).
+                </p>
+                <div class="code-snippet__container">
+                    <iframe
+                        src="https://carbon.now.sh/embed/1hMrc9F2CNQkPnH3kezJ"
+                        class="code-snippet"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+        <!-- </div> -->
     </section>
 </body>
 </html>

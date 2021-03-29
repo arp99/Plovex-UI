@@ -22,6 +22,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;
@@ -30,13 +31,17 @@ a{
 p{
     line-height: 1.8rem;
 }
+h1{
+    margin:1rem 0;
+}
 .header{
     width: 100vw;
     padding: 1rem 1rem;
     position: sticky;
     top:0;
-    z-index: 1;
+    z-index: 2;
     background: #f7f7f7;
+    display: none;
 }
 .brand-link{
     color:var(--primary-color);
@@ -73,22 +78,30 @@ main > .brand-logo{
 }
 .main{
     width: 100vw;
-    display: flex;
+    /* display: flex; */
 }
 .side-bar-navigation{
     position: fixed;
     min-width: max-content;
     height: 100vh;
-    top: 6rem;
+    top: 0;
+    left:0;
 }
 .side-bar{
     display: flex;
     flex-direction: column;
     background: #f7f7f7;
     height: max-content;
+    height: 100%;
     padding: var(--padding-md);
     padding-right: 0;
-    z-index: 1;
+    z-index: 2;
+}
+#brand{
+    margin-bottom: 1rem;
+}
+.heading-md:hover{
+    color: var(--txt-light);
 }
 ul{
     display: flex;
@@ -110,7 +123,10 @@ ul{
 .docs__container{
     width: 100vw;
     padding-left: 20%;
-    padding-top: 2.5rem;
+    min-height: 100vh;
+}
+#usage,#avatar{
+    padding-top: 1rem;
 }
 .docs-para{
     font-size: 1.1rem;
@@ -126,6 +142,7 @@ ul{
 .code-snippet__container{
     width: 95%;
     overflow-x: auto;
+    margin: 0.5rem 0;
 }
 .code-snippet{
     width: 80%; 
@@ -133,6 +150,15 @@ ul{
     border:0; 
     transform: translateX(-2rem);
     display: block;
+    z-index: 1;
+}
+.component-preview__container{
+    display: grid;
+    width:max-content;
+    padding: var(--padding-sm);
+    border-radius:0.5rem;
+    box-shadow: 0 4px 5px -2px var(--secondary-color);
+    grid-template-columns: repeat(3 , 1fr);
 }
 @media only screen and (max-width:950px){
     .code-snippet{
@@ -154,16 +180,19 @@ ul{
 }
 @media only screen and (max-width: 600px) {
     .header{
-        box-shadow: none;
+        display: block;
+    }
+    #brand{
+        display: none;
     }
     .side-bar-navigation{
         height: max-content;
         top: 5rem;
+        z-index: 2;
     }
     .side-bar{
         flex-direction: row;
         width: 100vw;
-        z-index: 1;
         height: max-content;
         overflow:auto;
         white-space: nowrap;
@@ -180,11 +209,16 @@ ul{
     .code-snippet__container{
         width: 95%;
         overflow-x: auto;
+        position: relative;
+        z-index: 0;
     }
     .code-snippet{
         width: 100%; 
         height:17rem; 
         border:0; 
         display: block;
+    }
+    .component-preview__container{
+        grid-template-columns: repeat(1,1fr);
     }
 }
