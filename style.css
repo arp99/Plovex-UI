@@ -114,7 +114,7 @@ main > .brand-logo{
 .heading-md:hover{
     color: var(--txt-light);
 }
-ul{
+.component-list__container{
     display: flex;
     flex-direction: column;
 }
