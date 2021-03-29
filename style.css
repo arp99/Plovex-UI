@@ -175,7 +175,7 @@ ul{
     grid-template-columns: repeat(3 , 1fr);
     grid-gap: 0.5rem;
 }
-.component-preview__container-card{
+.component-preview__container-card , .component-preview__container-image{
     display: flex;
     width:80%;
     justify-content: space-evenly;
