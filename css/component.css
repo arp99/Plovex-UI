@@ -250,6 +250,7 @@
 .avatar__container{
     position: relative;
     width: max-content;
+    height: max-content;
 }
 .avatar-img{
     border-radius: 50%;
