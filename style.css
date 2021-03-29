@@ -183,6 +183,9 @@ main > .brand-logo{
     border-radius:0.5rem;
     box-shadow: 0 4px 5px -2px var(--secondary-color);
 }
+#typo-flex{
+    flex-direction: column;
+}
 @media only screen and (max-width:950px){
     .code-snippet{
         height:17rem;
