@@ -142,6 +142,13 @@ main > .brand-logo{
 #usage,#avatar,#alert,#button,#card,#image,#navbar,#toast,#typography{
     padding-top: 1rem;
 }
+#usage{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
 .docs-para{
     font-size: 1.1rem;
     margin: 0.5rem 0;
@@ -155,12 +162,16 @@ main > .brand-logo{
 }
 .code-snippet__container{
     width: 95%;
+    height: max-content;
     overflow-x: auto;
     margin: 0.5rem 0;
 }
 .code-snippet{
     width: 80%; 
-    height:14.5rem; 
+    padding: 0;
+    /* some code snippets not taking ful height */
+    /* height: 29rem; */
+    /* height:max-content;  */
     border:0; 
     transform: translateX(-2rem);
     display: block;
@@ -223,7 +234,7 @@ main > .brand-logo{
         overflow:auto;
         white-space: nowrap;
     }
-    ul{
+    .component-list__container{
         flex-direction: row;
         margin-left: 1rem;
     }
@@ -240,7 +251,7 @@ main > .brand-logo{
     }
     .code-snippet{
         width: 100%; 
-        height:17rem; 
+        height:max-content; 
         border:0; 
         display: block;
     }

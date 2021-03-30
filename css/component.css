@@ -391,9 +391,10 @@
     color: var(--txt-dark);
 }
 .card-price{
-    width: 40%;
+    width: 60%;
     padding: var(--padding-sm) 0;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     color: var(--txt-dark);
 }
