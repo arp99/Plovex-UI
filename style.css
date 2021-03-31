@@ -17,6 +17,7 @@
 }
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body{
     width: 100vw;
@@ -89,7 +90,6 @@ main > .brand-logo{
 }
 .main{
     width: 100vw;
-    /* display: flex; */
 }
 .side-bar-navigation{
     position: fixed;
@@ -147,7 +147,6 @@ main > .brand-logo{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
 }
 .docs-para{
     font-size: 1.1rem;
@@ -169,11 +168,7 @@ main > .brand-logo{
 .code-snippet{
     width: 80%; 
     padding: 0;
-    /* some code snippets not taking ful height */
-    /* height: 29rem; */
-    /* height:max-content;  */
     border:0; 
-    transform: translateX(-2rem);
     display: block;
     z-index: 1;
 }
@@ -197,33 +192,37 @@ main > .brand-logo{
 #typo-flex{
     flex-direction: column;
 }
-@media only screen and (max-width:950px){
-    .code-snippet{
-        height:17rem;
-    }
-}
-@media only screen and (max-width:930px){
+@media only screen and (max-width:1050px){
     .docs__container{
-        padding-left: 25%;
+        padding-left: 23%;
     }
 }
-@media only screen and (max-width:700px){
+
+@media only screen and (max-width:930px){
     .docs__container{
         padding-left: 30%;
     }
-    .code-snippet{
-        transform: translateX(0);
+    .component-preview__container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .component-preview__container-flex{
+        flex-direction: column;
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .header{
         display: block;
+        position: fixed;
+        top: 0;
+        z-index: 2;
     }
     #brand{
         display: none;
     }
     .side-bar-navigation{
         height: max-content;
+        width: 100vw;
+        position: fixed;
         top: 5rem;
         z-index: 2;
     }
@@ -234,20 +233,31 @@ main > .brand-logo{
         overflow:auto;
         white-space: nowrap;
     }
+    #usage,#avatar,#alert,#button,#card,#image,#navbar,#toast,#typography{
+        justify-content: flex-start;
+        padding-top: 12rem;
+    }
+    #typography{
+        height: 120vh;
+    }
     .component-list__container{
         flex-direction: row;
+        align-items: center;
         margin-left: 1rem;
     }
     .docs__container{
         margin: 0;
         margin-top: 4.5rem;
-        padding: var(--padding-sm) var(--padding-md);
+        padding: 0 var(--padding-md);
     }
     .code-snippet__container{
         width: 95%;
         overflow-x: auto;
         position: relative;
         z-index: 0;
+    }
+    .component-preview__container-flex{
+        flex-direction: column;
     }
     .code-snippet{
         width: 100%; 
