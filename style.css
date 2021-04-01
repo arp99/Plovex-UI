@@ -14,7 +14,6 @@
     --padding-sm:0.5rem;
     --padding-md:1rem;
     --padding-lg:1.5rem;
-    --bg-color: #f7f7f7;
 }
 html {
     scroll-behavior: smooth;
@@ -23,7 +22,7 @@ html {
 body{
     width: 100vw;
     min-height: 100vh;
-    background: var(--bg-color);
+    background: #f7f7f7;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,7 +44,7 @@ h1{
     position: sticky;
     top:0;
     z-index: 2;
-    background: var(--bg-color);
+    background: #f7f7f7;
 }
 .header{
     width: 100vw;
@@ -53,7 +52,7 @@ h1{
     position: sticky;
     top:0;
     z-index: 2;
-    background: var(--bg-color);
+    background: #f7f7f7;
     display: none;
 }
 .brand-link{
@@ -102,7 +101,7 @@ main > .brand-logo{
 .side-bar{
     display: flex;
     flex-direction: column;
-    background: inherit;
+    background: #f7f7f7;
     height: max-content;
     height: 100%;
     padding: var(--padding-md);
