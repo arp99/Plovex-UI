@@ -91,7 +91,7 @@ main > .brand-logo{
 .main{
     width: 100vw;
 }
-.side-bar-navigation{
+.side-bar__navigation{
     position: fixed;
     min-width: max-content;
     height: 100vh;
@@ -219,7 +219,7 @@ main > .brand-logo{
     #brand{
         display: none;
     }
-    .side-bar-navigation{
+    .side-bar__navigation{
         height: max-content;
         width: 100vw;
         position: fixed;
