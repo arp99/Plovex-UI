@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plovex UI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/component.css">
+    <link rel="icon" href="/assets/UI-logo.png" type="image">
+</head>
+<body>
+    <header class="header">
+        <a href="/index.html" class="brand-link">
+            <div class="brand-name">
+                <img src="/assets/UI-logo.png" alt="Plovex-logo" class="brand-logo">
+                <span class="brand-title">PLOVEX UI</span>
+            </div>
+        </a>
+    </header>
+    <div class="side-bar__navigation">
+        <div class="side-bar">
+            <div id="brand">
+                <a href="/index.html" class="brand-link">
+                    <div class="brand-name">
+                        <img src="/assets/UI-logo.png" alt="Plovex-logo" class="brand-logo">
+                        <span class="brand-title">PLOVEX UI</span>
+                    </div>
+                </a>
+            </div>
+            <h1><a href="#usage" class="heading-md">Usage</a></h1>
+            <h1>Components</h1>
+            <ul class="component-list__container">
+                <a href="#avatar"><li class="component-item">Avatar</li></a>
+                <a href="#alert"><li class="component-item">Alert</li></a>
+                <a href="#button"><li class="component-item">Button</li></a>
+                <a href="#card"><li class="component-item">Card</li></a>
+                <a href="#image"><li class="component-item">Image</li></a>
+                <a href="#navbar"><li class="component-item">Navbar</li></a>
+                <a href="#toast"><li class="component-item">Toast</li></a>
+                <a href="#typography"><li class="component-item">Typography</li></a>
+            </ul>
+        </div>
+    </div class="side-bar__navigation">
+    <section class="main">
+        <div class="docs__container">
+            <div id="usage">
+                <h1 class="heading-md txt-dark">CSS</h1>
+                <p class="docs-para">
+                    Copy-paste the stylesheet <span class="code">&lt;link&gt;</span> into your <span class="code">&lt;head&gt;</span> before all other stylesheets to load our CSS.
+                </p>
+                <div class="code-snippet__container">
+                    <iframe
+                        src="https://carbon.now.sh/embed/OMANf9TSYAmIS3cvixio"
+                        class="code-snippet"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <div class="docs__container">
+            <div id="avatar">
+                <h1 class="heading-md txt-dark">Avatar</h1>
+                <p class="docs-para">
+                    Avatars are often used to show profile pictures. Use the correct class to easily create customizable avatars
+                </p>
+                <h1 class="heading-sm txt-light">Standard Avatars</h1>
+                <div class="component-preview__container">
+                    <div class="avatar__container avatar-xs">
+                        <!-- avatar - xs -->
+                        <img src="assets/avatar.png" alt="avatar" class="avatar-img">
+                    </div>
+                    <div class="avatar__container avatar-sm">
+                        <!-- avatar - sm -->
+                        <img src="assets/avatar.png" alt="avatar" class="avatar-img">
+                    </div>
+                    <div class="avatar__container avatar-md">
+                        <!-- avatar - md -->
+                        <img src="assets/avatar.png" alt="avatar" class="avatar-img">
+                    </div>
+                </div>
+                <p class="docs-para">
+                    The avatar component has 5 different sizes: <span class="code">avatar-xs</span>(3rem), <span class="code">avatar-sm</span>(4rem), <span class="code">avatar-md</span>(6rem), <span class="code">avatar-lg</span>(8rem), <span class="code">avatar-xlg</span>(10rem).
+                </p>
+                <div class="code-snippet__container">
+                    <iframe
+                        src="https://carbon.now.sh/embed/EJQblhhRWfe0PBgotSSx"
+                        class="code-snippet"
+                        style="min-height: 12rem;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+            <h1 class="heading-sm txt-light">Avatar with badge</h1>
+            <div class="component-preview__container">
+                <div class="avatar__container avatar-xs">
+                    <img src="assets/avatar.png" alt="avatar" class="avatar-img">
+                    <span class="avatar-badge"></span>
+                </div>
+                <div class="avatar__container avatar-sm">
+                    <img src="assets/avatar.png" alt="avatar" class="avatar-img">
+                    <span class="avatar-badge"></span>
+                </div>
+                <div class="avatar__container avatar-md">
+                    <img src="assets/avatar.png" alt="avatar" class="avatar-img">
+                    <span class="avatar-badge"></span>
+                </div>
+            </div>
+            <p class="docs-para">
+                Just add a span with class <span class="code">avatar-badge</span> below the avatar image, to get a beautiful badge
+            </p>
+            <div class="code-snippet__container">
+                <iframe
+                    src="https://carbon.now.sh/embed/dQoKeY88mle7MeEt1LCA"
+                    class="code-snippet"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+            <h1 class="heading-sm txt-light">Avatar with different Badges</h1>
+            <div class="component-preview__container">
+                <div class="avatar__container avatar-md">
+                    <img src="assets/avatar.png" alt="avatar" class="avatar-img">
+                    <!-- Online badge  -->
+                    <span class="avatar-badge online"></span>
+                </div>
+                <div class="avatar__container avatar-md">
+                    <img src="assets/avatar.png" alt="avatar" class="avatar-img">
+                    <!-- Online badge  -->
+                    <span class="avatar-badge offline"></span>
+                </div>
+                <div class="avatar__container avatar-md">
+                    <img src="assets/avatar.png" alt="avatar" class="avatar-img">
+                    <!-- Online badge  -->
+                    <span class="avatar-badge dnd"></span>
+                </div>
+            </div>
+            <p class="docs-para">
+                Add different classes to change color of badges: <span class="code">online</span>(green) , <span class="code">offline</span>(grey) , <span class="code">dnd</span>(red).
+            </p>
+            <div class="code-snippet__container">
+                <iframe
+                    src="https://carbon.now.sh/embed/yA1EqZd5YyF5bOjPedrR"
+                    class="code-snippet"
+                    style="min-height: 19rem;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+        </div>
+        <div class="docs__container">
+            <div id="alert">
+                <h1 class="heading-md txt-dark">Alert</h1>
+                <p class="docs-para">
+                    Alert messages can be used to notify the user of something important event.
+                </p>
+                <h1 class="heading-sm txt-light">Standard alerts</h1>
+                <div class="component-preview__container">
+                    <div class="alert">A Default alert message</div>
+                    <div class="alert alert-success">A Success alert message</div>
+                    <div class="alert alert-danger">A Danger alert message</div>
+                    <div class="alert alert-warning">A Warning alert message</div>
+                </div>
+                <p class="docs-para">
+                    Add classes: <span class="code">alert-success</span> , <span class="code">alert-danger</span> , <span class="code">alert-warning</span> to change style of alert.
+                </p>
+                <div class="code-snippet__container">
+                    <iframe
+                        src="https://carbon.now.sh/embed/WHRSJRD3pwZC9aDvkOCj"
+                        class="code-snippet"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <div class="docs__container">
+            <div id="button">
+                <h1 class="heading-md txt-dark">Button</h1>
+                <h1 class="heading-sm txt-light">Standard Buttons</h1>
+                <div class="component-preview__container">
+                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn btn-secondary">Secondary</button>
+                    <button type="button" class="btn btn-success">Success</button>
+                    <button type="button" class="btn btn-danger">Danger</button>
+                    <button type="button" class="btn btn-warning">Warning</button>
+                    <button type="button" class="btn btn-light">Light</button>
+                    <button type="button" class="btn btn-dark">Dark</button>
+                </div>
+            </div>
+            <p class="docs-para">
+                The standard buttons have 7 variants: <span class="code">btn-primary</span> ,<span class="code">btn-secondary</span> ,<span class="code">btn-success</span> ,<span class="code">btn-danger</span> ,<span class="code">btn-warning</span> ,<span class="code">btn-light</span> ,<span class="code">btn-dark</span>.
+            </p>
+            <div class="code-snippet__container">
+                <iframe
+                    src="https://carbon.now.sh/embed/244gTciXTBo69S4DUr1G"
+                    class="code-snippet"
+                    style="min-height: 13rem;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+            <h1 class="heading-sm txt-light">Outline Buttons</h1>
+            <div class="component-preview__container">
+                <button type="button" class="btn btn-outline-primary">Primary</button>
+                <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                <button type="button" class="btn btn-outline-success">Success</button>
+                <button type="button" class="btn btn-outline-danger">Danger</button>
+                <button type="button" class="btn btn-outline-warning">Warning</button>
+                <button type="button" class="btn btn-outline-light">Light</button>
+                <button type="button" class="btn btn-outline-dark">Dark</button>
+            </div>
+            <div class="code-snippet__container">
+                <iframe
+                    src="https://carbon.now.sh/embed/QCqNr6Pfm8Im5PNPer53"
+                    class="code-snippet"
+                    style="min-height: 13rem;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+            <h1 class="heading-sm txt-light">Different Sized buttons</h1>
+            <h1 class="heading-sm txt-dark">Large , Medium , Small</h1>
+            <button type="button" class="btn btn-primary btn-lg">Large Button</button>
+            <button type="button" class="btn btn-primary btn-md">Medium Button</button>
+            <button type="button" class="btn btn-primary btn-sm">Small Button</button>
+            <div class="code-snippet__container">
+                <iframe
+                    src="https://carbon.now.sh/embed/jmBxTeeXvMwB54NWUoD3"
+                    class="code-snippet"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+        </div>
+        <div class="docs__container">
+            <div id="card">
+                <h1 class="heading-md txt-dark">Card</h1>
+                <h1 class="heading-sm txt-light">Standard Card , Horizantal card</h1>
+                <div class="component-preview__container-flex">
+                    <div class="card">
+                        <div class="card-img__container">
+                            <img src="/assets/image1.png" alt="sample" class="card-img">
+                        </div>
+                        <div class="card-details">
+                            <h2 class="card-heading">Heading</h2>
+                            <h2 class="card-sub-heading">Sub Heading</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, error accusantium eius fuga</p>
+                            <div class="card-price">
+                                <span class="price">Rs. 699</span>
+                                <span class="price-original">Rs. 999</span>
+                            </div>        
+                            <button type="button"class="btn btn-outline-primary">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="card card-hz">
+                        <img src="/assets/image1.png" alt="sample" class="card-img">
+                        <div class="card-details">
+                            <h2 class="card-heading">Heading</h2>
+                            <h2 class="card-sub-heading">Sub Heading</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, error accusantium eius fuga dolore repellendus provident</p>
+                            <div class="card-price">
+                                <span class="price">Rs.699</span>
+                                <span class="price-original">Rs.999</span>
+                            </div>        
+                            <button type="button"class="btn btn-outline-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-snippet__container">
+                    <iframe
+                        src="https://carbon.now.sh/embed/ysxX3U6ejfk7m89FhMGL"
+                        class="code-snippet"
+                        style="min-height: 25rem;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+            
+        </div>
+        <div class="docs__container">
+            <div id="image">
+                <h1 class="heading-md txt-dark">Responsive Image</h1>
+                <p class="docs-para">Resize window to see image auto adjust dimension.</p>
+                <div class="component-preview__container-flex">
+                    <img src="/assets/image1.png" alt="sample-image" class="img-res">
+                </div>
+                <p class="docs-para">Add <span class="code">img-res</span> class to any image to make it responsive.</p>
+                <div class="code-snippet__container">
+                    <iframe
+                        src="https://carbon.now.sh/embed/H3hOiElY6swXo5iXQD4v"
+                        class="code-snippet"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <div class="docs__container">
+            <div id="navbar">
+                <h1 class="heading-md txt-dark">Navbar</h1>
+                <p class="docs-para">Navbar is a very useful component to start with any project. Use classes for background and text to change styling of the navbar.</p>
+                <h1 class="heading-sm txt-light">Default Navbar</h1>
+                <div class="component-preview__container-flex">
+                    <nav class="navbar">
+                        <div class="navbar__items-container bg-dark">
+                            <div class="navbar__brand">
+                                <a href="#" class="brand nav__link txt-primary">Brand Name</a>
+                            </div>
+                            <div class="navbar__list-items">
+                                <ul class="list__container">
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link txt-primary">Home</a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link txt-primary">About</a>                                
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link txt-primary">Contact</a>                                
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <p class="docs-para">Add classes like <span class="code">bg-secondary , bg-dark , bg-light</span> to change navbar background or classes like <span class="code">txt-secondary , txt-dark , txt-light</span> to change text color.</p>
+                <div class="code-snippet__container">
+                    <iframe
+                        src="https://carbon.now.sh/embed/DhhEWHdCpNmS46fODeb0"
+                        class="code-snippet"
+                        style="min-height: 28.5rem;"
+                        sandbox="allow-scripts allow-same-origin">
+                  </iframe>
+                </div>
+            </div>
+        </div>
+        <div class="docs__container">
+            <div id="toast">
+                <h1 class="heading-md txt-dark">Toast</h1>
+                <p class="docs-para">Push notification messages to your user using a toast</p>
+                <h1 class="heading-sm txt-light">Default Toast</h1>
+                <div class="component-preview__container-flex">
+                    <div class="toast">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui est inventore corrupti ipsum debitis in accusamus, veritatis voluptatibus quod voluptatum harum rem rerum eaque facilis at, consequatur veniam quae et!
+                            , ipsum nisi, eum quis alias eius doloribus, ipsam tempora?Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam itaque ducimus, illo porro culpa quas voluptatem ipsam? Consequatur voluptas odit reiciendis magni, nostrum 
+                       </p>
+                    </div>
+                </div>
+                <div class="code-snippet__containter">
+                    <iframe
+                        src="https://carbon.now.sh/embed/9mPfn4n6gTZIVWHp7qoQ"
+                        class="code-snippet"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <div class="docs__container">
+            <div id="typography">
+                <h1 class="heading-md txt-dark">Typography</h1>
+                <p class="docs-para">Here are some example of different types of text. Add classes for text to change styles </p>
+                <div class="component-preview__container-flex" id="typo-flex">
+                    <h1 class="heading-lg">Heading large</h1>
+                    <h1 class="heading-md txt-dark">Heading medium</h1>
+                    <h1 class="heading-sm txt-primary">Heading small</h1> 
+                    <hr>
+                    <p class="para-lg txt-primary">Para large</p>
+                    <p class="para-md txt-light">Para medium</p>
+                    <p class="para-sm txt-dark">Para small</p>
+                </div>
+                <div class="code-snippet__container">
+                    <iframe
+                        src="https://carbon.now.sh/embed/Tm5pYo1qvN2BUxehB33F"
+                        class="code-snippet"
+                        style="min-height: 13.5rem;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
