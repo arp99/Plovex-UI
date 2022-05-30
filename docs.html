@@ -29,7 +29,7 @@
                 </a>
             </div>
             <h1><a href="#usage" class="heading-md">Usage</a></h1>
-            <h1>Components</h1>
+            <h1 class="nav-heading">Components</h1>
             <ul class="component-list__container">
                 <a href="#avatar"><li class="component-item">Avatar</li></a>
                 <a href="#alert"><li class="component-item">Alert</li></a>
@@ -48,6 +48,7 @@
                 <h1 class="heading-md txt-dark">CSS</h1>
                 <p class="docs-para">
                     Copy-paste the stylesheet <span class="code">&lt;link&gt;</span> into your <span class="code">&lt;head&gt;</span> before all other stylesheets to load our CSS.
+                    You may use either of the syntax whichever suites you.
                 </p>
                 <div class="code-snippet__container">
                     <iframe
@@ -150,7 +151,8 @@
             <div id="alert">
                 <h1 class="heading-md txt-dark">Alert</h1>
                 <p class="docs-para">
-                    Alert messages can be used to notify the user of something important event.
+                    Alert messages can be used to notify the user of something important event and grab the users' attntion without interrupting users' flow.
+                    Alerts can be used to notify some special events such as Error, Success, warning, information.
                 </p>
                 <h1 class="heading-sm txt-light">Standard alerts</h1>
                 <div class="component-preview__container">
@@ -174,6 +176,9 @@
         <div class="docs__container">
             <div id="button">
                 <h1 class="heading-md txt-dark">Button</h1>
+                <p class="docs-para">Button component is a widely used element in any web application which is used to perform certain actions like : 
+                    <span class="code">Login</span>, <span class="code">Logout</span>, <span class="code">Buy Now</span> etc
+                </p>
                 <h1 class="heading-sm txt-light">Standard Buttons</h1>
                 <div class="component-preview__container">
                     <button type="button" class="btn btn-primary">Primary</button>
@@ -197,6 +202,11 @@
                 </iframe>
             </div>
             <h1 class="heading-sm txt-light">Outline Buttons</h1>
+            <p class="docs_para">
+                Outline buttons are of many types like- Primary outline button, Secondary outline button, Success outline button, Danger outline button, 
+                Warning light button, Light outline button, Dark outline button.You can add various colors according to your color scheme using classes 
+                like <span class="code">btn-outline-primary</span>, <span class="code">btn-outline-secondary</span>, <span class="code">btn-outline-success</span>
+                <span class="code">btn-outline-danger</span>,<span class="code">btn-outline-warning</span>, <span class="code">btn-outline-light</span>, <span class="code">btn-outline-dark</span>  .</p>
             <div class="component-preview__container">
                 <button type="button" class="btn btn-outline-primary">Primary</button>
                 <button type="button" class="btn btn-outline-secondary">Secondary</button>
@@ -215,6 +225,9 @@
                 </iframe>
             </div>
             <h1 class="heading-sm txt-light">Different Sized buttons</h1>
+            <p class="docs_para">Oh ho! You need some larger or smaller buttons? We got you covered. Just add the additional classes 
+                <span class="code">btn-lg</span>, <br /> <span class="code">btn-md</span>,<span class="code">btn-sm</span>
+            </p>
             <h1 class="heading-sm txt-dark">Large , Medium , Small</h1>
             <button type="button" class="btn btn-primary btn-lg">Large Button</button>
             <button type="button" class="btn btn-primary btn-md">Medium Button</button>
@@ -230,6 +243,7 @@
         <div class="docs__container">
             <div id="card">
                 <h1 class="heading-md txt-dark">Card</h1>
+                <p class="docs_para">Cards are used in web apps generally to showcase products, posters, text Content. Here you will get 2 variants of cards</p>
                 <h1 class="heading-sm txt-light">Standard Card , Horizantal card</h1>
                 <div class="component-preview__container-flex">
                     <div class="card">
@@ -247,12 +261,14 @@
                             <button type="button"class="btn btn-outline-primary">Buy Now</button>
                         </div>
                     </div>
-                    <div class="card card-hz">
+                </div>
+                <div class="component-preview__container-flex">
+                    <div class="card-hz">
                         <img src="/assets/image1.png" alt="sample" class="card-img">
                         <div class="card-details">
                             <h2 class="card-heading">Heading</h2>
                             <h2 class="card-sub-heading">Sub Heading</h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, error accusantium eius fuga dolore repellendus provident</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus</p>
                             <div class="card-price">
                                 <span class="price">Rs.699</span>
                                 <span class="price-original">Rs.999</span>
@@ -332,11 +348,10 @@
                 <h1 class="heading-md txt-dark">Toast</h1>
                 <p class="docs-para">Push notification messages to your user using a toast</p>
                 <h1 class="heading-sm txt-light">Default Toast</h1>
-                <div class="component-preview__container-flex">
+                <div class="component-preview__container">
                     <div class="toast">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui est inventore corrupti ipsum debitis in accusamus, veritatis voluptatibus quod voluptatum harum rem rerum eaque facilis at, consequatur veniam quae et!
-                            , ipsum nisi, eum quis alias eius doloribus, ipsam tempora?Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam itaque ducimus, illo porro culpa quas voluptatem ipsam? Consequatur voluptas odit reiciendis magni, nostrum 
+                            Welcome User to Plovex UI 😍
                        </p>
                     </div>
                 </div>
